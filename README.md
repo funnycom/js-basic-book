@@ -14,9 +14,9 @@
 ----------------------------------------------
 
 ### 깃허브 계정이 없거나 한꺼번에 다운로드하려면
-1. 파일 목록 오른쪽 위에 있는 [Colone or download]를 클릭합니다.
-2. [Download ZIP]을 클릭합니다.
-3. 다운로드한 파일의 압축을 풉니다.
+1. 파일 목록 오른쪽 위에 있는 [Colone or download]를 클릭합니다. 
+2. [Download ZIP]을 클릭합니다.js-basic-book-master.zip 라는 파일이 다운로드됩니다.
+3. 원하는 위치에 js-file이라는 폴더를 만들고 그 안에 다운로드한 파일의 압축을 풉니다.
 
 ![](https://github.com/funnycom/js-basic-book/blob/master/git-2.png)
 
