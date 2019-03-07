@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css?family=Marko+One');
+
+.container{
+  width:500px;
+  margin:0 auto;
+  background:url(images/heart.png) no-repeat 5px -100px;
+  background-size:500px;  
+  border:1px solid #ccc;
+  border-radius:2%;
+  box-shadow:2px 2px 5px #333;
+}
+.day1{
+  padding-top:50px;
+  text-align:center;  
+}
+.day1 p {
+  font-size:1.4em;
+  color:#666;
+}
+.accent{
+  margin-left:10px;
+  margin-right:10px;
+  font-family: 'Marko One', serif;
+  font-size:2.5em;
+  color:#00B300;
+  text-shadow:1px 2px 1px #222;
+}
+.day2 {
+  width:480px;
+  margin:240px auto 20px auto;
+}
+.day2 ul {
+  list-style: none;
+  border-bottom:1px dashed #ccc;
+  height:100px;
+}
+.item-title {
+  float:left;
+  width:160px;        
+  font-weight:bold;
+  font-size:1.8em;
+  line-height:100px;
+}
+.item-date {
+  float:left;
+  margin-left:60px;
+  font-size:1.2em;
+  color:#222;
+  text-align:right;
+  line-height:100px;
+}
