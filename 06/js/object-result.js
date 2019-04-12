@@ -3,7 +3,7 @@
 			name: "Robot",
 			price : "25,000",
 			madeIn : "Korea",
-			quantity:10,
+			quantity: 10,
 			showStock : function() {  // showStock( ) 메서드 정의
 				document.querySelector('#display').innerHTML = this.name + " 제품은 " + this.quantity + "개 남아있습니다.";
 			}
