@@ -30,15 +30,11 @@
 		function showPrice() {
 			var originPrice = document.querySelector('#oPrice').value;  // 원래 가격
 			var rate = document.querySelector('#rate').value; // 할인율 
-
-			if (originPrice > 0 && rate > 0) {  // 원래 가격과 할인율이 모두 0보다 클 경우에만 실행
-				var savedPrice = originPrice * (rate/100);  // 할인 금액
-				var resultPrice = originPrice - savedPrice;  // 원래 가격에서 할인 금액을 뺀 최종 가격
-			}			
+			var savedPrice = originPrice * (rate/100);  // 할인 금액
+			var resultPrice = originPrice - savedPrice;  // 원래 가격에서 할인 금액을 뺀 최종 가격			
 			document.querySelector('#showResult').innerHTML = "상품의 원래 가격은 " + originPrice + "원이고, 할인율은 " + rate + "%입니다." + savedPrice + "원을 절약한 " + resultPrice + "원에 살 수 있습니다."; 
-
-		
 		}		
+		// if문 삭제했습니다.
 	</script>
 </body>
 </html>
