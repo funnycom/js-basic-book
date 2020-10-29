@@ -20,14 +20,12 @@
 
 ![](https://github.com/funnycom/js-basic-book/blob/master/git-2.png)
 
-[또다른 방법]
+### 파일을 다운로드하는 또다른 방법
 
 1. 파일 목록 오른쪽에 있는 [Release] 항목에 [실습 파일]을 클릭합니다. 
-2. 실습 파일 목록 중 [Source Code]을 클릭합니다.js-files.zip 라는 파일이 다운로드됩니다.
+2. 실습 파일 목록 중 [Source Code]을 클릭합니다. js-files.zip 라는 파일이 다운로드됩니다.
 3. 원하는 위치에 다운로드한 파일의 압축을 풉니다.
-
 ![](https://github.com/funnycom/js-basic-book/blob/master/git-3.png)
-![](https://github.com/funnycom/js-basic-book/blob/master/git-4.png)
 
 ----------------------------------------------
 
