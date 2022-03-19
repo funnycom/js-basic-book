@@ -1,5 +1,8 @@
 # [Do it! 자바스크립트 기초] 소스 파일 활용 방법
 
+
+![](https://github.com/funnycom/js-basic-book/blob/master/js-basic.jpeg)
+
 **현재 깃허브에 올라와 있는 파일은 [Do it! 자바스크립트 기초]의 실습 파일입니다.** 
 
 -----------------------------------------------
