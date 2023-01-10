@@ -1,29 +1,45 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>할인 가격 구하기</title>
-	<link rel="stylesheet" href="css/bargain.css">
-</head>
-<body>	
-	<div id="contents">
-		<img src="images/sale.png">
-		<ul>
-			<li>
-					<label for="oPrice">원래 가격</label> 
-					<input type="text" id="oPrice">원
-			</li>
-			<li>
-				<label for="rate">할인율</label>
-				<input type="text" id="rate">%
-			</li>
-			<li>
-					<button onclick="showPrice()">할인 가격 계산하기</button>
-			</li>
-		</ul>
-		<div id="showResult"></div>	
-	</div>	
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>할인 가격 구하기</title>
+    <link rel="stylesheet" href="css/bargain.css" />
+  </head>
+  <body>
+    <div id="contents">
+      <img src="images/sale.png" />
+      <ul>
+        <li>
+          <label for="oPrice">원래 가격</label>
+          <input type="text" id="oPrice" />원
+        </li>
+        <li>
+          <label for="rate">할인율</label>
+          <input type="text" id="rate" />%
+        </li>
+        <li>
+          <button onclick="showPrice()">할인 가격 계산하기</button>
+        </li>
+      </ul>
+      <div id="showResult"></div>
+    </div>
+    <script>
+      function showPrice() {
+        let oPrice = document.querySelector("#oPrice").value;
+        let rate = document.querySelector("#rate").value;
+        let savedPrice = (oPrice * 10) / 100;
+        let resultPrice = oPrice - savedPrice;
+
+        document.querySelector(
+          "#showResult"
+        ).innerHTML = `원가는 ${oPrice}원. <br>
+		 할인율은 ${rate}원. <br>
+		 아낀 가격은 ${savedPrice}원. <br>
+		 판매가는 ${resultPrice}원. <br>
+		`;
+      }
+    </script>
+  </body>
 </html>
