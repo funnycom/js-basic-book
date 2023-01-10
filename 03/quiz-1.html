@@ -1,12 +1,25 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>웹 브라우저 창에 표시하기</title>
-</head>
-<body>	
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>웹 브라우저 창에 표시하기</title>
+    <style>
+      #quiz {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div id="quiz"></div>
+    </div>
+    <script>
+      let inner = prompt("내용입력");
+      document.querySelector("#quiz").innerHTML = `${inner}`;
+    </script>
+  </body>
 </html>
