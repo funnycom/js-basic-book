@@ -10,8 +10,16 @@
 </head>
 <body>
 	<script>
-		var r = prompt("원의 반지름은? (cm)");
-	
+		let r = prompt("원의 반지름은? (cm)");
+		function Circle(val){
+			this.val = val;
+			this.circum=()=>{
+				return (2*3.14*val);
+			};
+		}
+		let newCircle = new Circle(r);
+		console.log(newCircle.circum());
+
 	</script>
 </body>
 </html>
