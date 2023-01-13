@@ -1,25 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Circle 객체</title>
-	<style>
-		body { text-align: center; font-size:1.2em; line-height: 2em;}
-	</style>
-</head>
-<body>
-	<script>
-		let r = prompt("원의 반지름은? (cm)");
-		function Circle(val){
-			this.val = val;
-			this.circum=()=>{
-				return (2*3.14*val);
-			};
-		}
-		let newCircle = new Circle(r);
-		console.log(newCircle.circum());
-
-	</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Circle 객체</title>
+    <style>
+      body {
+        text-align: center;
+        font-size: 1.2em;
+        line-height: 2em;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      let r = prompt("원의 반지름은? (cm)");
+      function Circle(val) {
+        this.val = val;
+        this.circum = () => {
+          return 2 * 3.14 * val;
+        };
+      }
+      let newCircle = new Circle(r);
+      console.log(newCircle.circum());
+    </script>
+  </body>
 </html>
