@@ -1,44 +1,33 @@
-		var itemList = [];
-		var addBtn = document.querySelector('#add');
-		addBtn.addEventListener("click", addList);
-		
-		getItems();
+let addBtn = document.querySelector("#add");
 
-		function getItems() {
-			var storedData = localStorage.getItem("storageList");
-			if(storedData != null) itemList = JSON.parse(storedData);
-			showList();
-		}		
-				
-		function addList() {
-			var item = document.querySelector('#item').value;
-			if(item != null) {
-				itemList.push(item);
-				document.querySelector('#item').value = "";
-				document.querySelector('#item').focus();
-			}			
-			localStorage.setItem("storageList", JSON.stringify(itemList));
-			showList();
-		}	
+let itemList = [];
+addBtn.addEventListener("click", addList);
+function addList() {
+  let item = document.querySelector("#item");
+  if (item.value != null) {
+    itemList.push(item.value);
+    item.value = "";
+  }
+  showList();
+}
 
-		function showList() {						
-			var list = "<ul>";
-			for (var i=0; i<itemList.length; i++) {
-				list += "<li>" + itemList[i] + "<span class='close' id=" + i + ">X</span></li>";
-			}
-			list += "</ul>";
+function showList() {
+  let list = "<ul>";
+  for (let i = 0; i < itemList.length; i++) {
+    list = list + `<li>${itemList[i]}<span class='close' id=${i}>X</span></li>`;
+  }
+  list = list + "</ul>";
 
-			document.querySelector('#itemList').innerHTML = list;
+  document.querySelector("#itemList").innerHTML = list;
+  let removeBtn = document.querySelectorAll(".close");
+  console.log(removeBtn);
+  for (let i = 0; i < itemList.length; i++) {
+    removeBtn[i].addEventListener("click", removeList);
+  }
+}
 
-			var remove = document.getElementsByClassName('close');
-			for (var i=0; i<remove.length; i++) {
-				remove[i].addEventListener("click", removeList);
-			}
-		}
-
-		function removeList() {			
-			var id = this.getAttribute("id");	
-			itemList.splice(id, 1);
-			localStorage.setItem("storageList", JSON.stringify(itemList));
-			showList();
-		}
+function removeList() {
+  id = this.getAttribute("id");
+  itemList.splice(id, 1);
+  showList();
+}
