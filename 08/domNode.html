@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>DOM 트리에 노드 추가하기</title>
-	<style>
-		.accent {
-			border:1px solid #222;
-			padding:15px 20px;
-			background-color:#eee;
-		}
-		.bold {
-			font-weight:bold;
-		}
-	</style>
-</head>
-<body></body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DOM 트리에 노드 추가하기</title>
+    <style>
+      .accent {
+        border: 1px solid #222;
+        padding: 15px 20px;
+        background-color: #eee;
+      }
+      .bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="accent">주문이 완료되었습니다.</p>
+    <script>
+      let p = document.createElement("p");
+      let t = document.createTextNode("주문 완료");
+      p.appendChild(t);
+      document.body.appendChild(p);
+      let attr = document.createAttribute("class");
+      attr.value = "accent";
+      p.setAttributeNode(attr);
+    </script>
+  </body>
 </html>
