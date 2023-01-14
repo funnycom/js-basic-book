@@ -6,4 +6,4 @@ view.addEventListener("click", showDetail);
 function showDetail() {
   detail.style.display = "block";
 }
-//test
+//contribution test22
